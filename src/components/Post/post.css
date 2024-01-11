@@ -1,0 +1,127 @@
+.postContainer {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  background: #fff;
+  filter: drop-shadow(0px 0px 5px rgba(122, 117, 117, 0.5));
+}
+
+.postContainer .imageContainer {
+  /* background: #ece7e7; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 280px;
+  max-width: 280px;
+  height: 100%;
+  flex: 1;
+  overflow: hidden;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.postContainer .imageContainer img {
+  width: 100%;
+  height: 180px;
+}
+.postContainer .rightSection {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.postContainer .description {
+  padding-top: 1rem;
+  position: relative;
+}
+
+.postContainer .description li {
+  text-transform: capitalize;
+}
+
+.description .moreInfo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: blue;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.rightSection .subContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+  column-gap: 0.6rem;
+}
+
+.rightSection .subContainer .subBottons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.5rem;
+  border: 2px solid;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.rightSection .subContainer a .whatsapp {
+  border-color: green;
+  background: green;
+  color: white;
+}
+
+.rightSection .subContainer a .contact {
+  background: blue;
+  border-color: blue;
+  color: white;
+}
+
+@media (max-width: 720px) {
+  /* .postContainer .imageContainer {
+    max-width: 100%;
+  } */
+  .postContainer {
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    padding-left: 0;
+  }
+
+  .description .moreInfo {
+    display: none;
+  }
+  .postContainer .description {
+    padding: 1rem;
+    padding-bottom: 0;
+  }
+  /* .postContainer .rightSection {
+    padding: 1rem;
+  } */
+  .postContainer .imageContainer {
+    border-radius: 0;
+  }
+  .postContainer {
+    padding-top: 0;
+    overflow: hidden;
+  }
+  .rightSection .subContainer .subBottons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.5rem;
+    border: 2px solid;
+    padding: 0.5rem 0.8rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+}

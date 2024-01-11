@@ -1,0 +1,51 @@
+.filterListContainer {
+  width: 100%;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  background: rgb(197, 197, 243);
+  justify-content: center;
+  box-shadow: rgba(84, 84, 235, 1) 0px 3px 8px;
+}
+
+.filterListContainer .filterLists {
+  width: 70%;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.filterListContainer .filterLists ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.filterLists li {
+  cursor: pointer;
+}
+
+.icons {
+  width: 40px;
+}
+
+.filterLists li:hover .icons {
+  scale: 1.1;
+}
+
+@media screen and (max-width: 720px) {
+  .filterListContainer .filterLists {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0.4rem 0;
+  }
+  .filterLists li {
+    font-size: 0.5rem;
+  }
+  .icons {
+    width: 20px;
+  }
+}

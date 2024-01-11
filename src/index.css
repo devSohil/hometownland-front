@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital@0;1&family=Montserrat:wght@100;200;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0;
+}

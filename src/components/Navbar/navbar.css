@@ -1,0 +1,153 @@
+.navbarContainer {
+  width: 100%;
+  padding: 0.5rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: rgba(49, 111, 246, 0.25) 0px 3px 8px;
+  background: #316ff6;
+  color: #fff;
+}
+
+.navbarContainer .logoConatiner {
+  display: flex;
+  align-items: center;
+}
+.navbarContainer .toggleButton {
+  cursor: pointer;
+}
+
+.navbarContainer .navLists ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 500;
+  list-style: none;
+}
+.navbarContainer .navLists ul li {
+  cursor: pointer;
+}
+.navbarContainer .navLists .loginButton {
+  font-size: 1.1rem;
+  border: 2px solid #fff;
+  padding: 0.55rem 2.5rem;
+  border-radius: 25px;
+  transition: all 0.2s ease-in-out;
+}
+.navbarContainer .navLists ul .createpost {
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #fff;
+  padding: 0.55rem 1.5rem;
+  border-radius: 25px;
+  background: #fff;
+  transition: all 0.2s ease-in-out;
+}
+.navbarContainer .navLists ul .createpost a {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  column-gap: 0.2rem;
+  color: #316ff6;
+}
+.navbarContainer .navLists ul .createpost a > div:first-child {
+  padding-top: 0.2rem;
+}
+.navbarContainer .navLists a .loginButton {
+  color: #fff;
+}
+
+.navbarContainer .navLists a .loginButton:hover {
+  background: white;
+}
+
+.navbarContainer .navLists a .loginButton:hover {
+  color: #316ff6;
+}
+
+.navbarContainer .navLists a .createpost {
+  color: blue;
+}
+
+.menuIcon {
+  display: none;
+  font-size: 4vw;
+  position: relative;
+  z-index: 999;
+}
+.siteLogo {
+  font-size: 2rem;
+  margin-right: 0.5rem;
+}
+.profilePic {
+  font-size: 2.5rem;
+  margin-top: 0.4rem;
+  color: #fff;
+  cursor: pointer;
+}
+.navListsMobile {
+  position: absolute;
+  right: 0%;
+  top: 0;
+  width: 50%;
+  height: 100vh;
+  z-index: 2;
+  color: white;
+  background: rgb(95, 95, 250);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navListsMobile ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.navListsMobile a {
+  color: white;
+}
+.navbarContainer .navListsMobile ul .createpost {
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #fff;
+  padding: 0.55rem 1.5rem;
+  border-radius: 25px;
+  background: #fff;
+  transition: all 0.2s ease-in-out;
+}
+.navbarContainer .navListsMobile ul .createpost a {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  column-gap: 0.2rem;
+  color: #316ff6;
+}
+.navbarContainer .navListsMobile ul .createpost a > div:first-child {
+  padding-top: 0.2rem;
+}
+@media screen and (max-width: 720px) {
+  .navbarContainer {
+    padding: 0.8rem 1rem;
+  }
+  .menuIcon {
+    display: inline-block;
+  }
+  .navbarContainer .navLists {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navListsMobile {
+    width: 80%;
+  }
+  .menuIcon {
+    font-size: 6vw;
+  }
+}

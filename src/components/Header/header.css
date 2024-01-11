@@ -1,0 +1,25 @@
+.headerContainer {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 8rem;
+}
+
+.headerContainer .gridContainer {
+  /* display: grid;
+  grid-template-columns: repeat(2, minmax(400px, 600px));
+  grid-gap: 2rem;
+  place-content: center; */
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+@media (max-width: 720px) {
+  /* .headerContainer .gridContainer {
+    grid-template-columns: minmax(auto, 600px);
+  } */
+}
