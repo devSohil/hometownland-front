@@ -67,6 +67,9 @@ button {
     padding: 1rem;
     padding-top: 2rem;
   }
+  .loginContainer form {
+    width: 80%;
+  }
   .formTopSection,
   .formBottomSection {
     grid-gap: 1rem;
