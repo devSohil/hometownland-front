@@ -9,6 +9,6 @@
 
 @media screen and (max-width: 650px) {
   .nodataContainer {
-    min-height: 30vh;
+    min-height: 20vh;
   }
 }
