@@ -1,0 +1,103 @@
+.profileContainer {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 8rem;
+}
+
+.profileContainer .gridContainer {
+  /* display: grid;
+  grid-template-columns: repeat(2, minmax(400px, 600px));
+  grid-gap: 2rem;
+  place-content: center; */
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+@media (max-width: 720px) {
+  /* .headerContainer .gridContainer {
+    grid-template-columns: minmax(auto, 600px);
+  } */
+  .profileContainer {
+    width: 95%;
+  }
+}
+
+.profileContainer .topSection {
+  display: flex;
+  align-items: center;
+  background: #dddddd;
+  width: 50%;
+  gap: 3rem;
+  margin-top: clamp(2rem, 5vw, 5rem);
+  margin-left: clamp(1rem, 5vw, 5rem);
+  border-radius: 10px;
+}
+
+.profileContainer .topSection .topLeftContainer {
+  padding: 1rem;
+}
+
+.profileContainer .topSection .topLeftContainer img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: clamp(150px, 20vw, 240px);
+  height: clamp(150px, 20vw, 240px);
+  background-position: center;
+}
+.profileContainer .topSection .topRightContainer {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.profileContainer .topSection .topRightContainer > div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.profileContainer .bottomSection .title h1 {
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+.description .delete {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: red;
+  margin: 1rem;
+  padding: 0.4rem 1rem;
+  color: aliceblue;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .profileContainer .topSection {
+    width: 90%;
+    gap: 1rem;
+    padding: 2rem 0;
+  }
+}
+@media screen and (max-width: 720px) {
+  .profileContainer .topSection {
+    all: unset;
+    display: flex;
+    align-items: center;
+    background: #dddddd;
+    width: 100%;
+    gap: 1rem;
+    padding: 2rem 0;
+    margin: 0 auto;
+    margin-top: clamp(2rem, 5vw, 5rem);
+    border-radius: 10px;
+    flex-direction: column;
+  }
+}

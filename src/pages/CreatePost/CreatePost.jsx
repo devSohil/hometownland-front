@@ -126,6 +126,7 @@ const CreatePost = () => {
                     name="unit"
                     onChange={(e) => setAreaUnit(e.target.value)}
                     id="unit"
+                    autoComplete="false"
                     value={areaUnit}
                   >
                     <option value="sqft">Sq.ft</option>
@@ -143,6 +144,7 @@ const CreatePost = () => {
                     placeholder="Area"
                     name="area"
                     id="area"
+                    autoComplete="false"
                     value={area}
                     onChange={(e) => setArea(e.target.value)}
                   />
@@ -152,6 +154,7 @@ const CreatePost = () => {
                     value={state}
                     name="state"
                     id="state"
+                    autoComplete="false"
                     onChange={(e) => setState(e.target.value)}
                   />
                   <input
@@ -159,6 +162,7 @@ const CreatePost = () => {
                     placeholder="Country"
                     name="country"
                     id="country"
+                    autoComplete="false"
                     value={country}
                     onChange={(e) => setCountry(e.target.value)}
                   />
@@ -176,6 +180,7 @@ const CreatePost = () => {
                     id="price"
                     name="price"
                     value={price}
+                    autoComplete="false"
                     onChange={(e) => setPrice(e.target.value)}
                   />
                   <select
@@ -198,6 +203,7 @@ const CreatePost = () => {
                   placeholder="bedrooms"
                   id="bedrooms"
                   name="bedrooms"
+                  autoComplete="false"
                   value={bedrooms}
                   onChange={(e) => setBedrooms(e.target.value)}
                 />
@@ -212,6 +218,7 @@ const CreatePost = () => {
                   placeholder="bathrooms"
                   id="bathrooms"
                   name="bathrooms"
+                  autoComplete="false"
                   value={bathrooms}
                   onChange={(e) => setBathrooms(e.target.value)}
                 />
@@ -247,6 +254,7 @@ const CreatePost = () => {
                   value={floors}
                   id="floors"
                   name="floors"
+                  autoComplete="false"
                   onChange={(e) => setFloors(e.target.value)}
                 />
               </div>
@@ -339,6 +347,7 @@ const CreatePost = () => {
                   placeholder="name"
                   id="name"
                   name="name"
+                  autoComplete="false"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                 />
@@ -352,6 +361,7 @@ const CreatePost = () => {
                   placeholder="Contact"
                   value={contact}
                   id="contact"
+                  autoComplete="false"
                   name="contact"
                   onChange={(e) => setContact(e.target.value)}
                 />
@@ -364,6 +374,7 @@ const CreatePost = () => {
                   type="email"
                   id="email"
                   name="email"
+                  autoComplete="false"
                   placeholder="Email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
@@ -380,6 +391,7 @@ const CreatePost = () => {
                   placeholder="Whatsapp number"
                   id="whatsapp"
                   name="whatsapp"
+                  autoComplete="false"
                   value={whatsapp}
                   onChange={(e) => setWhatsapp(e.target.value)}
                 />
@@ -392,6 +404,7 @@ const CreatePost = () => {
                   name="communication"
                   id="communication"
                   value={communication}
+                  autoComplete="false"
                   onChange={(e) => setCommunication(e.target.value)}
                 >
                   <option value={""} disabled hidden>

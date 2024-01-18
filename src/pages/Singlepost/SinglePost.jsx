@@ -11,7 +11,7 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Navigation, Pagination } from "swiper/modules";
-import imageNotAvailable from "../../assets/demo.jpg";
+import imageNotAvailable from "../../assets/Image_not_available.png";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import { basetoString } from "../../function/basetoString";

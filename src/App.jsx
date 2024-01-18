@@ -10,6 +10,7 @@ import LoginPage from "./pages/Login/Login";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { findUser } from "./redux/store/userSlice";
+import Profile from "./pages/Profile/Profile";
 
 function App() {
   const { accesstoken, user } = useSelector((state) => state.user);
@@ -43,6 +44,7 @@ function App() {
         <Route path="/singlepost/:id" element={<SinglePost />} />
         <Route path="/register" element={<Register />} />
         <Route path="/createpost" element={<CreatePost />} />
+        {user?.id && <Route path="/profile" element={<Profile />} />}
       </Routes>
     </>
   );

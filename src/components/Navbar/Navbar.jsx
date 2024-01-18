@@ -45,6 +45,16 @@ const Navbar = () => {
               <Link to="/">Home</Link>
             </li>
             {logedUser?.id && (
+              <li>
+                <Link to="/profile">
+                  {/* <div>
+                    <IoAdd className="addIcon" />
+                  </div> */}
+                  <div>Profile</div>
+                </Link>
+              </li>
+            )}
+            {logedUser?.id && (
               <li className="createpost">
                 <Link to="createpost">
                   <div>
@@ -81,6 +91,16 @@ const Navbar = () => {
             <li>
               <Link to="/">Home</Link>
             </li>
+            {logedUser?.id && (
+              <li>
+                <Link to="/profile">
+                  {/* <div>
+                    <IoAdd className="addIcon" />
+                  </div> */}
+                  <div>Profile</div>
+                </Link>
+              </li>
+            )}
             {logedUser?.id && (
               <li className="createpost">
                 <Link to="/createpost">
