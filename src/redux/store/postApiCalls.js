@@ -11,7 +11,9 @@ import {
 export const getAllPostApi = async (dispatch) => {
   dispatch(postLoading());
   try {
-    const postdata = await axios.get("http://localhost:2345/post");
+    const postdata = await axios.get(
+      "https://htl-backend-92bi.onrender.com/post"
+    );
     dispatch(getAllPosts(postdata.data));
   } catch (err) {
     dispatch(postError(true));
@@ -25,7 +27,7 @@ export const createPostApi = async (
   dispatch(postLoading());
   try {
     const newpost = await axios.post(
-      `http://localhost:2345/post/createpost/${userId}`,
+      `https://htl-backend-92bi.onrender.com/post/createpost/${userId}`,
       formData,
       { headers: { "Content-Type": "multipart/form-data" } }
     );
@@ -44,7 +46,7 @@ export const searchPostsApi = async (search, dispatch) => {
   dispatch(postLoading());
   try {
     const filteredpost = await axios.get(
-      `http://localhost:2345/post/search/${search}`
+      `https://htl-backend-92bi.onrender.com/post/search/${search}`
     );
     dispatch(searchPosts(filteredpost.data));
   } catch (err) {
@@ -55,9 +57,12 @@ export const searchPostsApi = async (search, dispatch) => {
 export const filterPostsApi = async (filters, dispatch) => {
   dispatch(postLoading());
   try {
-    const filteredpost = await axios.get(`http://localhost:2345/post/filter/`, {
-      params: filters,
-    });
+    const filteredpost = await axios.get(
+      `https://htl-backend-92bi.onrender.com/post/filter/`,
+      {
+        params: filters,
+      }
+    );
     dispatch(filterSearch(filteredpost.data));
   } catch (err) {
     dispatch(postError(true));

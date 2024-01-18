@@ -5,7 +5,10 @@ export const userLoginApi = async (user, dispatch) => {
   dispatch(userError(false));
 
   try {
-    const userdata = await axios.post("http://localhost:2345/user/login", user);
+    const userdata = await axios.post(
+      "https://htl-backend-92bi.onrender.com/user/login",
+      user
+    );
     const userDataPayload = {
       loggeduser: {
         _id: userdata.data.user._id,

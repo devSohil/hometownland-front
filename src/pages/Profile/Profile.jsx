@@ -24,7 +24,7 @@ const Profile = () => {
   const handleDelete = async (id) => {
     try {
       const afterdelete = await axios.delete(
-        `http://localhost:2345/post/delete/${id}`
+        `https://htl-backend-92bi.onrender.com/post/delete/${id}`
       );
 
       if (afterdelete.data.post === null) {
@@ -40,7 +40,7 @@ const Profile = () => {
     const fetchUserDetails = async () => {
       try {
         const user = await axios.get(
-          `http://localhost:2345/user/profile/${userId}`
+          `https://htl-backend-92bi.onrender.com/user/profile/${userId}`
         );
         setUserDetails(user.data);
       } catch (error) {
@@ -53,7 +53,7 @@ const Profile = () => {
     const userposts = async () => {
       try {
         const posts = await axios.get(
-          `http://localhost:2345/post/profile/${userId}`
+          `https://htl-backend-92bi.onrender.com/post/profile/${userId}`
         );
         setPostLists(posts.data);
       } catch (error) {

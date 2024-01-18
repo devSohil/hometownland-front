@@ -37,7 +37,7 @@ const SinglePost = () => {
   useEffect(() => {
     const fetchSinglePost = async () => {
       const singlepost = await axios.get(
-        `http://localhost:2345/post/singlepost/${id}`
+        `https://htl-backend-92bi.onrender.com/post/singlepost/${id}`
       );
       setSinglePost(singlepost.data);
     };
